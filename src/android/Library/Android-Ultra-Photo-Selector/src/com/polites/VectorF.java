@@ -28,8 +28,8 @@ public class VectorF {
 	public final PointF end = new PointF();
 	
 	public void calculateEndPoint() {
-		end.x = Math.cos(angle) * length + start.x;
-		end.y = Math.sin(angle) * length + start.y;
+		end.x = (float)Math.cos(angle) * length + start.x;
+		end.y = (float)Math.sin(angle) * length + start.y;
 	}
 	
 	public void setStart(PointF p) {
